@@ -33,7 +33,7 @@ DB_PASSWORD=laravel_pass
 ・MySQL8.0.26
 
 ## ER図
-<img width="150" src="src/ER.svg">
+<img width="500" src="src/ER.svg">
 
 ## 開発環境
 ・開発環境: http//localhost/  
