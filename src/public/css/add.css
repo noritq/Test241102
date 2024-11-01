@@ -1,0 +1,75 @@
+.back {
+    background: rgb(242, 242, 242);
+}
+.content {
+    margin: 0px auto;
+    width: 700px;
+}
+.content__heading {
+    padding-top: 50px;
+}
+.content--required {
+    background: red;
+    color: white;
+}
+.content__name--input {
+    border: 1px solid gray;
+    width: 680px;
+    height: 30px;
+}
+.content__price {
+    margin-top: 30px; 
+}
+.content__price--input {
+    border: 1px solid gray;
+    width: 680px;
+    height: 30px;
+}
+.content__image {
+    margin-top: 30px;
+}
+.content__season {
+    margin-top: 30px;
+}
+.checkbox {
+    margin-right: 30px;
+}
+.content__description {
+    margin-top: 30px;
+}
+.content__description--input {
+    display: block;
+    resize: none;
+}
+.content__submit {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 30px auto;
+    padding-bottom: 50px;
+}
+.content__submit--button {
+    width: 120px;
+        height: 30px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+        background: orange;
+}
+.content__submit--back{
+    width: 120px;
+        height: 30px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+        background: rgb(200, 199, 199);
+}
+.script{
+    width: 100px;
+    height: auto;
+}
+.content__error {
+    color: red;
+}

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FruitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/products', [FruitController::class, 'index']);
+Route::post('/products', [FruitController::class, 'update']);
+Route::get('/products/search', [FruitController::class, 'search']);
+Route::get('products/register', [FruitController::class, 'create']);
+Route::post('products/register', [FruitController::class, 'store']);
+
+Route::get('products/{id}', [FruitController::class, 'edit']);
+
+

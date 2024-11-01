@@ -1,0 +1,82 @@
+
+.content{
+    background: rgb(242 242 242);
+    display:flex;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-template-rows: 50px 350px 200px 100px;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+}
+.content__img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.content__img--data {
+    width: 450px;
+    height: auto;
+}
+.content__img--select {
+    margin-top: 20px;
+}
+.content__detail{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.content__detail--name--input {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.content__detail--price--input {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.checkbox {
+    margin-right:30px;
+}
+.content__description {
+    grid-column:1/3;
+    grid-row:3/4;
+}
+.content__description--input {
+    margin-top: -15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    resize: none;
+}
+.content__button{
+    grid-column:1/3;
+    grid-row:4/5;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.content__button--submit{
+    width: 120px;
+    height: 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    background: orange;
+}
+.content__button--back {
+    width: 120px;
+    height: 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius:5px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+    background: rgb(200, 199, 199);
+}
+.content__error {
+    color: red;
+}
