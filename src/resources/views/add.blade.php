@@ -29,7 +29,7 @@
                     商品画像 <span class="content--required">必須</span>
                 </label>
                     <div id="preview" style="width: 300px;"></div>
-                    <input id="inputElm" type="file" name="image">
+                    <input id="inputElm" type="file" name="image" accept=".png, .jpeg">
                     <div class="content__error">@error('image'){{$message}}@enderror</div>
                 <script>
                     const inputElm = document.getElementById('inputElm');
@@ -49,10 +49,10 @@
             <div class="content__season">
                 <label for="">季節 <span class="content--required">必須</span>
                 <div>
-                    <label class="checkbox"><input type="checkbox" name="season_id" value="1">春</label>
-                    <label class="checkbox"><input type="checkbox" name="season_id" value="2">夏</label>
-                    <label class="checkbox"><input type="checkbox" name="season_id" value="3">秋</label>
-                    <label class="checkbox"><input type="checkbox" name="season_id" value="4">冬</label>
+                    <label class="checkbox"><input type="checkbox" name="season" value="1">春</label>
+                    <label class="checkbox"><input type="checkbox" name="season" value="2">夏</label>
+                    <label class="checkbox"><input type="checkbox" name="season" value="3">秋</label>
+                    <label class="checkbox"><input type="checkbox" name="season" value="4">冬</label>
                 </div>
                 <div class="content__error">@error('season'){{$message}}@enderror</div>
                 </label>

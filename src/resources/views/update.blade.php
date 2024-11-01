@@ -10,7 +10,7 @@
         <input type="hidden" name="id" value="{{$products->id}}">
     <div class="grid">
         <div class="heading">
-            <p>商品一覧><a href="">キウイ</a></p>
+            <p>商品一覧><a href="/products/{{$products->id}}">{{$products->name}}</a></p>
         </div>
         <div class="content__img">
             <img class="content__img--data" src="{{asset('storage/' . $products->image)}}" alt="イメージ">

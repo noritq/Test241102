@@ -50,7 +50,7 @@ class FruitController extends Controller
         $product->description=$inputs['description'];
         $product->save();
 
-        $seasonId=$inputs['season_id'];
+        $seasonId=$inputs['season'];
         $product->seasons()->attach($seasonId);
         return back()->withInput();
 

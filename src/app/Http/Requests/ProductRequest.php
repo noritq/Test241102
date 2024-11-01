@@ -28,7 +28,7 @@ class ProductRequest extends FormRequest
             'price' => ['required', 'numeric', 'between:0,10000'],
             'season' => ['required'],
             'description' => ['required', 'max:120'],
-            'image' => ['required', 'mines:jpeg,png'],
+            'image' => ['required', 'mimes:png, jpeg'],
         ];
     }
         public function messages(){
